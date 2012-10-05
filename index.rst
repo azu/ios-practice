@@ -11,7 +11,7 @@ iOSアプリ開発におけるプラクティス集
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
    docs/objective-c
 
