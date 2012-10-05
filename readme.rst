@@ -3,6 +3,10 @@
 
 Objective-C,iOSにおけるプラクティスをまとめたもの
 
+中身はSphinxですが、readthedocsで見られるようになっています。
+
+* `iOS Practice documentation <http://ios-practice.readthedocs.org/>`_
+
 Contributions
 =================================
 
