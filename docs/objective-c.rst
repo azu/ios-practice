@@ -31,7 +31,7 @@ KVO(Key-Value Observing)が使えない事や、アクセッサメソッドを�
 
 そのため、``-init`` と ``-dealloc`` 内では **プロパティを使わない** とすることで単純化できるため、そういう習慣としています。
 
-``-init`` での初期化一回しか代入を行わないプロパティはreadonly属性にする
+外から書き込む必要のないプロパティはreadonly属性にする
 ------------------------------------------------------------------------
 
 Objective-C のプロパティにはreadonly属性が指定できます。
@@ -85,6 +85,7 @@ Xcodeのバージョン(Clang)が上がるに連れて省略出来る箇所が�
 一般に理解できるであろう最低限の記述を考えながら書いていくとよい。
 
 * `Xcode 4.5のテンプレートに@synthesizeがなくなった・・ | J7LG <http://www.j7lg.com/archives/1270>`_
+* `Objective-C Feature Availability Index <http://developer.apple.com/library/ios/#releasenotes/ObjectiveC/ObjCAvailabilityIndex/_index.html>`_
 
 .. note:: 
 
