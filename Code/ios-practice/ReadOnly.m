@@ -1,10 +1,4 @@
-//
-//  Created by azu on 12/10/05.
-//
-
-
 #import "ReadOnly.h"
-
 
 @implementation ReadOnly {
 

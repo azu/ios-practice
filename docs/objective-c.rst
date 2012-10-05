@@ -6,9 +6,6 @@ Objective-C
 プロパティとインスタンス変数(ivar)
 =============================================
 
-不必要なivarは宣言しない
----------------------------------------------
-
 getter/setter, ``-init`` , ``-dealloc`` 以外でivarにアクセスしない
 ---------------------------------------------------------------------
 
@@ -37,34 +34,62 @@ KVO(Key-Value Observing)が使えない事や、アクセッサメソッドを�
 
 そのため、``-init`` と ``-dealloc`` 内では **プロパティを使わない** とすることで単純化できるため、そういう習慣としています。
 
-readonly属性のプロパティは ``-init`` で一度だけivarを設定する
+``-init`` での初期化一回しか代入を行わないプロパティはreadonly属性にする
 ------------------------------------------------------------------------
 
 Objective-C のプロパティにはreadonly属性が指定できます。
+そのプロパティのスコープを小さくするために、外から書き込みが必要のないプロパティにはreadonly属性を指定しましょう。
+
+:file:`/Code/ios-practice/ReadOnly.h`
+
+.. literalinclude:: /Code/ios-practice/ReadOnly.h
+  :language: objc
 
 
-.. code-block:: objc
+:file:`/Code/ios-practice/ReadOnly.m`
 
-    @interface ios_practiceTests : NSObject
-    @property(nonatomic, strong, readonly) NSArray *array;    
-    @end
-    
-    @implementation ios_practiceTests {
-        NSArray *_array;
-    }
-    
-    @synthesize array = _array;
-   
-    - (id)init {
-        self = [super init];
-        if (!self){
-            return nil;
-        }
-        // readonlyの初期化はここで一回のみ
-        _array = [NSArray arrayWithObjects:@"readonly", @"first", @"init", nil];
-        
-        return self;
-    }
+.. literalinclude:: /Code/ios-practice/ReadOnly.m
+  :language: objc
+
+また、readonly属性を指定すると、そのクラス内部からも ``self.array = @[];`` のような代入はできなくなりますが、
+クラスエクステンションを使いプライベートカテゴリ内で、プロパティに ``readwrite`` を付けることで、
+外からはreadonlyだけど、中からはreadwriteのプロパティを作ることができます。
+
+* `Objective-C 2.0 のプロパティ隠蔽 | ishwt::tracking <http://ishwt.net/blog/2010/05/21/objc20-property/>`_
+* `privateなpropertyを作りたい時は無名カテゴリ（クラスエクステンション）を使う — Gist <https://gist.github.com/1267428>`_
+
+インスタンス変数には接頭辞に_を付ける
+------------------------------------------------------------------------------
+
+インスタンス変数とプロパティの名前が被らないようにするため、頭か末尾に_(アンダーバー)を付けると思いますが、
+基本的には統一されていることが大事なのでどちらでも構いませんが、
+最近のAppleのドキュメントでは接頭辞に_を付けることを推奨しているため、新規に書くコード等はこの作法に則った方が良いでしょう。
+
+* `Cocoa向け コーディング ガイドライン - CodingGuidelines.pdf <https://developer.apple.com/jp/devcenter/ios/library/documentation/CodingGuidelines.pdf>`_
+* `プロパティに対応するインスタンス変数の命名規則について - Awaresoft <http://www.awaresoft.jp/ios-dev/item/115-ivar-naming-convention.html>`_
 
 
-.. _`プロパティに対応するインスタンス変数の命名規則について - Awaresoft` http://www.awaresoft.jp/ios-dev/item/115-ivar-naming-convention.html
+インスタンス変数とプロパティのまとめ
+------------------------------------------------
+ここまでをまとめるてみると
+
+:file:`/Code/ios-practice/Property.h`
+
+.. literalinclude:: /Code/ios-practice/Property.h
+  :language: objc
+
+
+:file:`/Code/ios-practice/Property.m`
+
+.. literalinclude:: /Code/ios-practice/Property.m
+  :language: objc
+
+Xcodeのバージョン(Clang)が上がるに連れて省略出来る箇所が増えてきているので、
+最低限の記述を考えながら書いていくとよい。
+
+不必要なivarは宣言しない
+---------------------------------------------
+
+そのインスタンス変数が本当に必要なのか、ローカル変数で間に合わないかを検討しましょう。
+
+

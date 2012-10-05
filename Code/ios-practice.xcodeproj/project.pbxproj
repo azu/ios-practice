@@ -10,6 +10,7 @@
 		17B5C1925F07166ABFDFF1E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C8926D816469C6F0823B /* Foundation.framework */; };
 		17B5C1B97247F4126414D797 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C6B37683482372C95C1C /* Default-568h@2x.png */; };
 		17B5C44CE775D3D5DC0886BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CADD7436251C03434C64 /* UIKit.framework */; };
+		17B5C482B9985CFEE339C412 /* Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C923A79019CB2B46E937 /* Property.m */; };
 		17B5C4D47EDF581AE81FE707 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CADD7436251C03434C64 /* UIKit.framework */; };
 		17B5C56BF8252CC13EF07D25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CE0151DF135362231FF5 /* AppDelegate.m */; };
 		17B5C58181A29F102CAC9581 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C51EF97DBC22BB047B5F /* Default@2x.png */; };
@@ -53,7 +54,9 @@
 		17B5C84D61315578730A7C2D /* ios_practiceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ios_practiceTests.h; sourceTree = "<group>"; };
 		17B5C8926D816469C6F0823B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17B5C8C6BBA4C5D0B4025716 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B5C923A79019CB2B46E937 /* Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Property.m; sourceTree = "<group>"; };
 		17B5C9FB6F05A176B26F99AC /* ios_practiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_practiceTests.m; sourceTree = "<group>"; };
+		17B5CAB1445E0283C32C7945 /* Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Property.h; sourceTree = "<group>"; };
 		17B5CADD7436251C03434C64 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		17B5CBA9DBBB49801DA4E023 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		17B5CBBC0DBAF436B29A58D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 		17B5C3C76F85111B0F89E72C /* ios-practice */ = {
 			isa = PBXGroup;
 			children = (
+				17B5CAB1445E0283C32C7945 /* Property.h */,
+				17B5C923A79019CB2B46E937 /* Property.m */,
 				17B5C631B0F6171BA00A7058 /* ReadOnly.h */,
 				17B5C35985FC977E2EBAFAB2 /* ReadOnly.m */,
 				17B5CE0151DF135362231FF5 /* AppDelegate.m */,
@@ -293,6 +298,7 @@
 				17B5C56BF8252CC13EF07D25 /* AppDelegate.m in Sources */,
 				17B5C7E29199807EEF0EBAD2 /* ios_practice.xcdatamodeld in Sources */,
 				17B5C86205D5B398B879ECD5 /* ReadOnly.m in Sources */,
+				17B5C482B9985CFEE339C412 /* Property.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
