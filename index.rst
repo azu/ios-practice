@@ -14,6 +14,7 @@ Contents:
    :maxdepth: 3
    
    docs/ivar_property
+   docs/code_structures
 
 
 Indices and tables

@@ -21,6 +21,7 @@
 		17B5C9E489D9C63841043C0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C2405AFBFCFA999774A2 /* InfoPlist.strings */; };
 		17B5C9E8C98A05AED1451E55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CFD8C0AF3185CD4F8DAE /* CoreGraphics.framework */; };
 		17B5CA2EC4AE1A5AB750CF04 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CBA9DBBB49801DA4E023 /* SenTestingKit.framework */; };
+		17B5CC38331B61AB175B874B /* CompareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CCADE3AA39429F6E8B61 /* CompareTests.m */; };
 		17B5CC3B51C4D122772922F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2B9076527360A50B3CA /* main.m */; };
 		17B5CDD34583F97FE6E715A3 /* ios_practiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9FB6F05A176B26F99AC /* ios_practiceTests.m */; };
 		17B5CE141D9B06134882534B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CCDCC9510F89AE17A6B8 /* Default.png */; };
@@ -46,6 +47,7 @@
 		17B5C2B9076527360A50B3CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17B5C35985FC977E2EBAFAB2 /* ReadOnly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadOnly.m; sourceTree = "<group>"; };
 		17B5C51EF97DBC22BB047B5F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		17B5C5A84B84781E183A2260 /* Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		17B5C61AE10A446B553577E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17B5C622C8F5190F3E5EB431 /* ios-practice-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-practice-Prefix.pch"; sourceTree = "<group>"; };
 		17B5C631B0F6171BA00A7058 /* ReadOnly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadOnly.h; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		17B5CBA9DBBB49801DA4E023 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		17B5CBBC0DBAF436B29A58D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17B5CC8E9ADD94E8AA03A24D /* ios-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B5CCADE3AA39429F6E8B61 /* CompareTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompareTests.m; sourceTree = "<group>"; };
 		17B5CCDCC9510F89AE17A6B8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		17B5CE0151DF135362231FF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		17B5CE6856B089C47B541ADB /* ios_practice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios_practice.xcdatamodel; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 		17B5C0FBD4E5E5F8E0EE4D98 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				17B5CCADE3AA39429F6E8B61 /* CompareTests.m */,
 				17B5C9FB6F05A176B26F99AC /* ios_practiceTests.m */,
 				17B5C84D61315578730A7C2D /* ios_practiceTests.h */,
 				17B5C7E978B1983520D7C9DF /* Supporting Files */,
@@ -137,6 +141,7 @@
 		17B5C7E978B1983520D7C9DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				17B5C5A84B84781E183A2260 /* Tests-Prefix.pch */,
 				17B5C2405AFBFCFA999774A2 /* InfoPlist.strings */,
 				17B5C0BE607BC68CCC87BB16 /* ios-practiceTests-Info.plist */,
 			);
@@ -287,6 +292,7 @@
 			files = (
 				17B5CDD34583F97FE6E715A3 /* ios_practiceTests.m in Sources */,
 				17B5CEC465B373581A59F916 /* ReadOnly.m in Sources */,
+				17B5CC38331B61AB175B874B /* CompareTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +348,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ios-practice/ios-practice-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/ios-practiceTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -371,7 +377,7 @@
 					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ios-practice/ios-practice-Prefix.pch";
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/ios-practiceTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

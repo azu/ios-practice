@@ -10,8 +10,6 @@
 #import "ReadOnly.h"
 
 
-#define HC_SHORTHAND
-
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 
 @implementation ios_practiceTests {
