@@ -1,10 +1,10 @@
-‚±‚ê‚Í‰½?
+ã“ã‚Œã¯ãªã«?
 =================================
 
-Objective-C,iOSƒAƒvƒŠŠJ”­‚É‚¨‚¯‚éƒvƒ‰ƒNƒeƒBƒX‚ð‚Ü‚Æ‚ß‚½‚à‚ÌB
+Objective-C,iOSã«ãŠã‘ã‚‹ãƒ—ãƒ©ã‚¯ãƒ†ã‚£ã‚¹ã‚’ã¾ã¨ã‚ãŸã‚‚ã®
 
 Contributions
 =================================
 
-Sphinx‚ðŽg‚Á‚Ä‘‚©‚ê‚Ä‚¢‚é‚Ì‚ÅA’¼ÚPull Request‘—‚è‚Â‚¯‚é‚©A
-Issue‚É‘‚«ž‚ñ‚Å‰º‚³‚¢B
+Sphinxã‚’ä½¿ã£ã¦æ›¸ã„ã¦ã„ã‚‹ã®ã§ã€ãã®ã¾ã¾Pull Requestã‚’é€ã‚‹ã‹ã€
+Issueã‚’ç«‹ã¦ã‚‹ç­‰ã—ã¦ä¸‹ã•ã„ã€‚

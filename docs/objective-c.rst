@@ -1,10 +1,7 @@
-=============================================
-Objective-C 
-=============================================
-
-
 プロパティとインスタンス変数(ivar)
 =============================================
+
+`github/objective-c-conventions <https://github.com/github/objective-c-conventions>`_ をベースとして書かれています。
 
 getter/setter, ``-init`` , ``-dealloc`` 以外でivarにアクセスしない
 ---------------------------------------------------------------------
@@ -67,7 +64,7 @@ Objective-C のプロパティにはreadonly属性が指定できます。
 
 * `Cocoa向け コーディング ガイドライン - CodingGuidelines.pdf <https://developer.apple.com/jp/devcenter/ios/library/documentation/CodingGuidelines.pdf>`_
 * `プロパティに対応するインスタンス変数の命名規則について - Awaresoft <http://www.awaresoft.jp/ios-dev/item/115-ivar-naming-convention.html>`_
-
+* `[iOS] Objective-C @propertyについて « きんくまデザイン <http://www.kuma-de.com/blog/2012-06-25/3617>`_
 
 インスタンス変数とプロパティのまとめ
 ------------------------------------------------
@@ -85,7 +82,14 @@ Objective-C のプロパティにはreadonly属性が指定できます。
   :language: objc
 
 Xcodeのバージョン(Clang)が上がるに連れて省略出来る箇所が増えてきているので、
-最低限の記述を考えながら書いていくとよい。
+一般に理解できるであろう最低限の記述を考えながら書いていくとよい。
+
+* `Xcode 4.5のテンプレートに@synthesizeがなくなった・・ | J7LG <http://www.j7lg.com/archives/1270>`_
+
+.. note:: 
+
+	|today| 現在では、@interface の @property 宣言だけでもコンパイルは問題なく通る。
+	どこまで省略するかは周りのチームの人に合わせて行うのがよいと思われる。
 
 不必要なivarは宣言しない
 ---------------------------------------------
@@ -93,3 +97,4 @@ Xcodeのバージョン(Clang)が上がるに連れて省略出来る箇所が�
 そのインスタンス変数が本当に必要なのか、ローカル変数で間に合わないかを検討しましょう。
 
 
+.. _`github/objective-c-conventions` https://github.com/github/objective-c-conventions
