@@ -13,7 +13,7 @@ Contents:
 .. toctree::
    :maxdepth: 3
    
-   docs/objective-c
+   docs/ivar_property
 
 
 Indices and tables
