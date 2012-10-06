@@ -25,10 +25,9 @@ ifやfor等、波括弧 ``{}`` を省略できるものがありますが、基�
 比較は常に厳密に行う
 -----------------------------------------------
 
-
 NSStringを比較する場合 ``==`` で文字列を比較するのは避けるべきです。
 ``==`` による比較は文字列としての比較ではなく、同じポインタの値かどうかの比較になります。
- 
+
 文字列の比較を行う場合は ``isEqualToString:`` メソッドを使い比較します。
 
 :file:`/Code/Tests/CompareTests.m`
@@ -46,6 +45,13 @@ NSStringを比較する場合 ``==`` で文字列を比較するのは避ける�
 	
 	* `プログラミング雑記: NSString定数の定義 <http://ken-plus.blogspot.jp/2012/03/nsstring.html>`_
 
+一般にオブジェクト同士の値を比較する場合は適当な ``isEqual*:`` や ``compare:`` といったメソッドが用意されているはずなので、
+それを利用し比較するべきです。(intやNSUInteger等のプリミティブな値はC言語と同様に ``==`` で比較して問題ありません)
+
+.. seealso:: 
+
+	`Objective-Cによるプログラミング - ProgrammingWithObjectiveC.pdf <https://developer.apple.com/jp/devcenter/ios/library/documentation/ProgrammingWithObjectiveC.pdf#page=40>`_
+	"オブジェクトの等価性を判断する" に ``==`` , ``isEqual:`` , ``compare:`` について書かれている。
 
 真偽値の比較は省略する
 ------------------------------------------------
@@ -60,3 +66,5 @@ BOOL型等の真偽値をif文等において比較するのは、あまり意�
 	if(hasYES == YES){ /* somthing */ }
 	// Good!
 	if(hasYES){ /* somthing */ }
+
+
