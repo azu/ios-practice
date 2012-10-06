@@ -17,10 +17,12 @@
 		17B5C5DE71F5F58C7460E06D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C8926D816469C6F0823B /* Foundation.framework */; };
 		17B5C6BDEF71A42EF9846408 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CF531AAEAF9C7FF704DF /* CoreData.framework */; };
 		17B5C7E29199807EEF0EBAD2 /* ios_practice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C915B1BEBB0447819DB5 /* ios_practice.xcdatamodeld */; };
+		17B5C8460B43617BB2E216E7 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CFAA8463FC18A8D3E7CA /* MyTableViewController.m */; };
 		17B5C86205D5B398B879ECD5 /* ReadOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C35985FC977E2EBAFAB2 /* ReadOnly.m */; };
 		17B5C9E489D9C63841043C0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C2405AFBFCFA999774A2 /* InfoPlist.strings */; };
 		17B5C9E8C98A05AED1451E55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CFD8C0AF3185CD4F8DAE /* CoreGraphics.framework */; };
 		17B5CA2EC4AE1A5AB750CF04 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CBA9DBBB49801DA4E023 /* SenTestingKit.framework */; };
+		17B5CBFFC6A40AC12157CFF9 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CFAA8463FC18A8D3E7CA /* MyTableViewController.m */; };
 		17B5CC38331B61AB175B874B /* CompareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5CCADE3AA39429F6E8B61 /* CompareTests.m */; };
 		17B5CC3B51C4D122772922F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C2B9076527360A50B3CA /* main.m */; };
 		17B5CDD34583F97FE6E715A3 /* ios_practiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C9FB6F05A176B26F99AC /* ios_practiceTests.m */; };
@@ -43,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17B5C0300026E68836715AB5 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		17B5C0BE607BC68CCC87BB16 /* ios-practiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ios-practiceTests-Info.plist"; sourceTree = "<group>"; };
 		17B5C2B9076527360A50B3CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17B5C35985FC977E2EBAFAB2 /* ReadOnly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadOnly.m; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		17B5CE0151DF135362231FF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		17B5CE6856B089C47B541ADB /* ios_practice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios_practice.xcdatamodel; sourceTree = "<group>"; };
 		17B5CF531AAEAF9C7FF704DF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		17B5CFAA8463FC18A8D3E7CA /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
 		17B5CFD8C0AF3185CD4F8DAE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		17B5CFF216434E7983A8F7F3 /* ios-practice-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ios-practice-Info.plist"; sourceTree = "<group>"; };
 		73F1A37D161EA8B0002D00EB /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMockitoIOS.framework; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 		17B5C3C76F85111B0F89E72C /* ios-practice */ = {
 			isa = PBXGroup;
 			children = (
+				17B5CFAA8463FC18A8D3E7CA /* MyTableViewController.m */,
+				17B5C0300026E68836715AB5 /* MyTableViewController.h */,
 				17B5CAB1445E0283C32C7945 /* Property.h */,
 				17B5C923A79019CB2B46E937 /* Property.m */,
 				17B5C631B0F6171BA00A7058 /* ReadOnly.h */,
@@ -293,6 +299,7 @@
 				17B5CDD34583F97FE6E715A3 /* ios_practiceTests.m in Sources */,
 				17B5CEC465B373581A59F916 /* ReadOnly.m in Sources */,
 				17B5CC38331B61AB175B874B /* CompareTests.m in Sources */,
+				17B5C8460B43617BB2E216E7 /* MyTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +312,7 @@
 				17B5C7E29199807EEF0EBAD2 /* ios_practice.xcdatamodeld in Sources */,
 				17B5C86205D5B398B879ECD5 /* ReadOnly.m in Sources */,
 				17B5C482B9985CFEE339C412 /* Property.m in Sources */,
+				17B5CBFFC6A40AC12157CFF9 /* MyTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -50,8 +50,8 @@ NSStringを比較する場合 ``==`` で文字列を比較するのは避ける�
 
 .. seealso:: 
 
-	`Objective-Cによるプログラミング - ProgrammingWithObjectiveC.pdf <https://developer.apple.com/jp/devcenter/ios/library/documentation/ProgrammingWithObjectiveC.pdf#page=40>`_
-	"オブジェクトの等価性を判断する" に ``==`` , ``isEqual:`` , ``compare:`` について書かれている。
+	`Objective-Cによるプログラミング P40 <https://developer.apple.com/jp/devcenter/ios/library/documentation/ProgrammingWithObjectiveC.pdf#page=40>`_
+		"オブジェクトの等価性を判断する" に ``==`` , ``isEqual:`` , ``compare:`` について書かれている。
 
 真偽値の比較は省略する
 ------------------------------------------------

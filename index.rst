@@ -8,6 +8,13 @@ iOS Practice
 
 iOSアプリ開発におけるプラクティス集
 
+.. seealso:: 
+
+	`Objective-Cによるプログラミング`_
+		AppleによるObjective-Cでのベストプラクティスについてかかれた文章
+	`github/objective-c-conventions`_
+		GithubによるObjective-Cのコーディングルール
+
 Contents:
 
 .. toctree::
@@ -15,6 +22,7 @@ Contents:
    
    docs/ivar_property
    docs/code_structures
+   docs/tableview
 
 
 Indices and tables
@@ -24,3 +32,5 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+.. _`github/objective-c-conventions`: https://github.com/github/objective-c-conventions
+.. _`Objective-Cによるプログラミング`: https://developer.apple.com/jp/devcenter/ios/library/documentation/ProgrammingWithObjectiveC.pdf
