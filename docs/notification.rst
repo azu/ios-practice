@@ -14,7 +14,7 @@
 	[[UIApplication sharedApplication] cancelAllLocalNotifications];
 
 ローカル通知の設定は同期的に行われるので大量に設定する場合は、dispatch_async等を使い、
-UIが固まらないように設定した上げるといいです。
+UIが固まらないように設定するといいです。
 
 .. code-block:: objc
 
