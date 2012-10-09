@@ -15,6 +15,16 @@ iOSアプリ開発におけるプラクティス集
 	`github/objective-c-conventions`_
 		GithubによるObjective-Cのコーディングルール
 
+サンプルコード
+--------------------------------------------
+
+サンプルコードは `azu/ios-practice · GitHub <https://github.com/azu/ios-practice>`_ のCodeディレクトリにあります。
+
+.. code-block:: bash
+	
+	git clone https://github.com/azu/ios-practice.git 
+	cd Code && open ios-practice.xcodeproj
+
 Contents:
 
 .. toctree::
