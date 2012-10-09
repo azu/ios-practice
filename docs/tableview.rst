@@ -53,7 +53,7 @@ Cellに直接Viewを追加しない
 ----------------------------------------------------------
 
 Cellに対して ``addSubView:`` でUIButtonやLabelといったViewを追加する事ができるが、
-UITableViewCellのインスタンスに直接ではなく、cell.contentViewに追加する.
+UITableViewCellのインスタンスに直接ではなく、cell.contentViewに追加する。
 
 .. image:: /_static/TableView_Cell.png
 	:alt: TableViewCellの構成要素
@@ -97,7 +97,7 @@ cellに対して複数回Viewが追加されてしまう事が起こってしま
 3. CellのtextLabelやaccessoryView等のデフォルトのセルコンテンツで表示する
 4. カスタムセルを作って利用する
 
-1と2は :ref:`tableviewcell-issue-label <上記のリンク>` のような方法であるが、
+1と2は 上記のリンクのような方法であるが、
 3と4のような手法を使い表示したほうが、コード的にも綺麗に書くことができ、バグも減ると思われる。
 
 次は3と4の手法についてあたっていく

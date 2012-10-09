@@ -23,6 +23,7 @@ Contents:
    docs/ivar_property
    docs/code_structures
    docs/tableview
+   docs/notification
 
 
 Indices and tables
