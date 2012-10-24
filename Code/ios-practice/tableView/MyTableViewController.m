@@ -66,9 +66,6 @@
         cell = [[UITableViewCell alloc]
                                  initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    UILabel *label = [[UILabel alloc] init];
-    [cell addSubview:label];
-    [cell.contentView addSubview:label];
     // Configure the cell...
     cell.accessoryType = UITableViewCellAccessoryNone;
     [self updateCell:cell atIndexPath:indexPath];
