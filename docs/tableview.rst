@@ -131,9 +131,9 @@ accessoryViewは見落としがちですが、Cellの右側に任意のUIViewオ
 
 デフォルトのセルコンテンツを利用したサンプルはCodeのTableViewに入っています。
 
-:file:`/Code/ios-practice/TableView/MyTableViewController.m`
+:file:`/Code/ios-practice/tableView/MyTableViewController.m`
 
-.. literalinclude:: /Code/ios-practice/TableView/MyTableViewController.m
+.. literalinclude:: /Code/ios-practice/tableView/MyTableViewController.m
   :language: objc
 
 上記のコードでは、デフォルトのセルコンテンツにそれぞれ指定をしています。
