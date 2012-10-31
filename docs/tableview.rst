@@ -129,6 +129,19 @@ accessoryViewは見落としがちですが、Cellの右側に任意のUIViewオ
 凝った表示を求めない場合は、これらのデフォルトセルコンテンツを使い解決出来る場合が多いため、
 まずは、デフォルトセルコンテンツで解決できないかを考えてみるとよいです。
 
+デフォルトのセルコンテンツを利用したサンプルはCodeのTableViewに入っています。
+
+:file:`/Code/ios-practice/TableView/MyTableViewController.m`
+
+.. literalinclude:: /Code/ios-practice/TableView/MyTableViewController.m
+  :language: objc
+
+上記のコードでは、デフォルトのセルコンテンツにそれぞれ指定をしています。
+
+.. image:: /_static/MyTableViewSample.png
+	:alt: MyTableViewの実行結果
+
+
 カスタムセルを利用する
 -----------------------------------------------------------
 

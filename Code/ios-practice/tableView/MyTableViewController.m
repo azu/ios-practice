@@ -20,21 +20,22 @@
     if (!self){
         return nil;
     }
-
-    _dataSource = [NSArray arrayWithObjects:@"tableview", @"cell", @"custom cell", nil];
-
     return self;
 }
 
 #pragma mark - View lifecycle
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-
     // deselect cell
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
-
-    //  update visible cells
+    // update dataSource
+    [self updateDataSource];
+    // update visible cells
     [self updateVisibleCells];
+}
+
+- (void)updateDataSource {
+    self.dataSource = [NSArray arrayWithObjects:@"tableview", @"cell", @"custom cell", nil];
 }
 
 #pragma mark - Cell Operation
@@ -45,10 +46,18 @@
     }
 }
 
+// Update Cells
 - (void)updateCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    // Update Cells
+    // imageView
+    cell.imageView.image = [UIImage imageNamed:@"no_image.png"];
+    // textLabel
     NSString *text = [self.dataSource objectAtIndex:(NSUInteger) indexPath.row];
     cell.textLabel.text = text;
+    NSString *detailText = @"詳細のtextLabel";
+    cell.detailTextLabel.text = detailText;
+    // arrow accessoryView
+    UIImage *arrowImage = [UIImage imageNamed:@"arrow.png"];
+    cell.accessoryView = [[UIImageView alloc] initWithImage:arrowImage];
 }
 //--------------------------------------------------------------//
 #pragma mark -- UITableViewDataSource --
@@ -64,7 +73,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (!cell){
         cell = [[UITableViewCell alloc]
-                                 initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+                                 initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     // Configure the cell...
     cell.accessoryType = UITableViewCellAccessoryNone;

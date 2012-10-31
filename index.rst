@@ -23,7 +23,7 @@ iOSアプリ開発におけるプラクティス集
 .. code-block:: bash
 	
 	git clone https://github.com/azu/ios-practice.git 
-	cd Code && open ios-practice.xcodeproj
+	cd ios-practice/Code && open ios-practice.xcodeproj
 
 Contents:
 
@@ -34,6 +34,8 @@ Contents:
    docs/code_structures
    docs/tableview
    docs/notification
+   docs/save-data
+   docs/coredata
 
 
 Indices and tables
