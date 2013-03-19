@@ -32,6 +32,7 @@ Contents:
    
    docs/ivar_property
    docs/code_structures
+   docs/storyboard
    docs/tableview
    docs/notification
    docs/save-data

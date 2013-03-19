@@ -154,3 +154,5 @@ Interface Builderを使い見た目を決定できるため細かい調整が簡
 
 	`シンプルなカスタムセルの作り方とセル内のボタンへのイベント設定方法 <http://tech-gym.com/2012/10/ios/1007.html>`_
 		xibを使ったカスタムセルとセル内部のUIButtonのイベント設定方法について
+    `TableViewでDynamic PrototypesだけどStatic Cellsのように見た目をGUIで作成する方法 | Technology-Gym <http://tech-gym.com/2012/11/ios/1037.html>`_
+        カスタムセルもUITableViewController上で作る方法を利用した例
