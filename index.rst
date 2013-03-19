@@ -8,7 +8,7 @@ iOS Practice
 
 iOSアプリ開発におけるプラクティス集
 
-.. seealso:: 
+.. seealso::
 
 	`Objective-Cによるプログラミング`_
 		AppleによるObjective-Cでのベストプラクティスについてかかれた文章

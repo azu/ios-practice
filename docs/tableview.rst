@@ -69,7 +69,7 @@ Viewを追加するのはcell.contentViewの方にする。
     [cell addSubview:label];
     // Good!
     [cell.contentView addSubview:label];
-    
+
 ControllerでCellにaddSubView:するのを避ける
 -----------------------------------------------------------
 

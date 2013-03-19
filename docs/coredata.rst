@@ -13,11 +13,17 @@ CoreDataについて
 Xcodeも :menuselection:`Editor --> Create NSManagedObject SubClass` で類似の機能が存在するが、
 mogeneratorを使い生成した方が、拡張性等が優れているためこちらを利用する。
 
+.. todo::
+
+    mogeneratorの親クラスを利用したサブクラスの作り方について
 
 `MagicalRecord`_ のススメ
 ----------------------------------------------
 
 CoreDataをもっと使いやすく、ハマりどころを減らすために `MagicalRecord`_ ライブラリの使用を推奨。
+
+* `MagicalRecordのREADMEを意訳 - Object for cutie <http://d.hatena.ne.jp/tanaponchikidun/20121202/1354468112>`_
+
 
 少なくともCoreDataを扱う際にはManagerとなるクラスを経由するようにして利用しないと、
 不必要にmanagedObjectContextが複数作成されてしまうことなどが発生してしまう可能性があるため、統一的な利用方法を定めておくべきである。
