@@ -10,3 +10,6 @@ StoryBoardを使ったほうが効率がよくなると思います。
 * iOS6以降のContainer View
 * Segueでの遷移
 
+画面間で値を渡す場合にXibの時のようにインスタンスを作って設定する方法はStoryBoardでも運用的カバーできます。
+
+* `StoryBoardで画面間で値を渡す方法論について(文字列を直接使わない方法) | Technology-Gym <http://tech-gym.com/2013/03/ios/1157.html>`_ 
