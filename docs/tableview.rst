@@ -6,6 +6,8 @@ TableViewにおいていくつか気をつけておくと良いことがあり�
 下記を参考に書いています。
 
 * `iOS開発におけるパターンによるオートマティズム <http://hmdt.jp/hmdtbooks/pg329.html>`_
+* `Pro iOS Table Views <http://www.apress.com/9781430233480>`_
+* `timd/Pro-iOS-TableViews <https://github.com/timd/Pro-iOS-TableViews>`_
 
 Cellの表示更新を別のメソッドに分ける
 ---------------------------------------------------
