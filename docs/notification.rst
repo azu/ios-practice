@@ -294,5 +294,8 @@ LocationNotificationManagerSpy には ``self.managerSpy.schedules`` というよ
 
     `Intro to Objective-C TDD [Screencast] - Quality Coding <http://qualitycoding.org/objective-c-tdd/>`_
         今回のようなプロパティで依存するDataSourceを注入してモックですり替える方法について詳しく解説した動画
+    `azu/LocalNotificationPattern`_
+        通知登録管理クラスのサンプルプロジェクト
+
 
 .. _`azu/LocalNotificationPattern`: https://github.com/azu/LocalNotificationPattern
