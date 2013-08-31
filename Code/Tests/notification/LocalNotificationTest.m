@@ -1,6 +1,6 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
-#import "LocalNotificationClass.h"
+#import "LocalNotificationManager.h"
 
 @interface LocalNotificationTest : SenTestCase
 
@@ -18,7 +18,7 @@
 
 - (void)testSetOnce {
     NSDate *tommorowDate = [NSDate dateWithTimeIntervalSinceNow:60 * 60 * 24];
-    [LocalNotificationClass setNotificationAtDate:tommorowDate];
+    [LocalNotificationManager setNotificationAtDate:tommorowDate];
     // セットしたNotificationを取り出す
     NSArray *notifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
     UILocalNotification *notification = [notifications objectAtIndex:0];
@@ -29,8 +29,8 @@
 // 毎回リセットされてから設定されているか
 - (void)testSetTwice {
     NSDate *tommorowDate = [NSDate dateWithTimeIntervalSinceNow:60 * 60 * 24];
-    [LocalNotificationClass setNotificationAtDate:tommorowDate];
-    [LocalNotificationClass setNotificationAtDate:tommorowDate];
+    [LocalNotificationManager setNotificationAtDate:tommorowDate];
+    [LocalNotificationManager setNotificationAtDate:tommorowDate];
     // セットしたNotificationを取り出す
     NSArray *notifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
     UILocalNotification *notification = [notifications objectAtIndex:0];
@@ -41,7 +41,7 @@
 // 過去の日付には設定できない
 - (void)testSetPastDate {
     NSDate *yesterday = [NSDate dateWithTimeIntervalSinceNow:-60 * 60 * 24];
-    [LocalNotificationClass setNotificationAtDate:yesterday];
+    [LocalNotificationManager setNotificationAtDate:yesterday];
     // セットしたNotificationを取り出す
     NSArray *notifications = [[UIApplication sharedApplication] scheduledLocalNotifications];
     assertThat(notifications, hasCountOf(0));

@@ -1,10 +1,10 @@
-#import "LocalNotificationClass.h"
+#import "LocalNotificationManager.h"
 
-@implementation LocalNotificationClass
+@implementation LocalNotificationManager
 
-+ (void)setNotificationAtDate:(NSDate *)fireDate {
++ (void)setNotificationAtDate:(NSDate *) fireDate {
     // 通知時間 < 現在時 なら設定しない
-    if (([fireDate compare:[NSDate date]] == NSOrderedAscending)){
+    if (([fireDate compare:[NSDate date]] == NSOrderedAscending)) {
         return;
     }
     // 設定する前に、設定済みの通知をキャンセルする

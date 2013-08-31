@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		17B5C0A4EC95540681C12EDE /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CD4FCDBDDA01FFB05CA1 /* arrow@2x.png */; };
-		17B5C18006DDD09BAD9B5BDB /* LocalNotificationClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C924BD54273920291743 /* LocalNotificationClass.m */; };
+		17B5C18006DDD09BAD9B5BDB /* LocalNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C924BD54273920291743 /* LocalNotificationManager.m */; };
 		17B5C1925F07166ABFDFF1E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5C8926D816469C6F0823B /* Foundation.framework */; };
 		17B5C1B97247F4126414D797 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C6B37683482372C95C1C /* Default-568h@2x.png */; };
 		17B5C23067A34D8CF15582AE /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5C7AF135A9FFADA5F3C03 /* arrow.png */; };
-		17B5C39BC385413332D957CA /* LocalNotificationClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C924BD54273920291743 /* LocalNotificationClass.m */; };
+		17B5C39BC385413332D957CA /* LocalNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C924BD54273920291743 /* LocalNotificationManager.m */; };
 		17B5C3C38D543D0798081883 /* no_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B5CEB21DBCA912AE7796A8 /* no_image@2x.png */; };
 		17B5C44CE775D3D5DC0886BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B5CADD7436251C03434C64 /* UIKit.framework */; };
 		17B5C482B9985CFEE339C412 /* Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B5C923A79019CB2B46E937 /* Property.m */; };
@@ -57,7 +57,7 @@
 		17B5C0BE607BC68CCC87BB16 /* ios-practiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ios-practiceTests-Info.plist"; sourceTree = "<group>"; };
 		17B5C2B9076527360A50B3CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		17B5C35985FC977E2EBAFAB2 /* ReadOnly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadOnly.m; sourceTree = "<group>"; };
-		17B5C4B1D888B5F22F336974 /* LocalNotificationClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotificationClass.h; sourceTree = "<group>"; };
+		17B5C4B1D888B5F22F336974 /* LocalNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotificationManager.h; sourceTree = "<group>"; };
 		17B5C51EF97DBC22BB047B5F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		17B5C51F08C87FB6163A3E20 /* no_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_image.png; sourceTree = "<group>"; };
 		17B5C5A84B84781E183A2260 /* Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		17B5C8926D816469C6F0823B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17B5C8C6BBA4C5D0B4025716 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B5C923A79019CB2B46E937 /* Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Property.m; sourceTree = "<group>"; };
-		17B5C924BD54273920291743 /* LocalNotificationClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationClass.m; sourceTree = "<group>"; };
+		17B5C924BD54273920291743 /* LocalNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationManager.m; sourceTree = "<group>"; };
 		17B5C9FB6F05A176B26F99AC /* ios_practiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_practiceTests.m; sourceTree = "<group>"; };
 		17B5CAB1445E0283C32C7945 /* Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Property.h; sourceTree = "<group>"; };
 		17B5CADD7436251C03434C64 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -158,7 +158,7 @@
 				17B5CE0265F6AF9B8297C563 /* Supporting Files */,
 				17B5C915B1BEBB0447819DB5 /* ios_practice.xcdatamodeld */,
 				17B5CDD2D5D1A9FC234004B4 /* TableView */,
-				17B5CC3ED64561E3056D2AAB /* notification */,
+				17B5CC3ED64561E3056D2AAB /* LocalNotification */,
 				17B5C1587DFCDE8078E9E695 /* Resources */,
 			);
 			path = "ios-practice";
@@ -198,13 +198,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		17B5CC3ED64561E3056D2AAB /* notification */ = {
+		17B5CC3ED64561E3056D2AAB /* LocalNotification */ = {
 			isa = PBXGroup;
 			children = (
-				17B5C4B1D888B5F22F336974 /* LocalNotificationClass.h */,
-				17B5C924BD54273920291743 /* LocalNotificationClass.m */,
+				17B5C4B1D888B5F22F336974 /* LocalNotificationManager.h */,
+				17B5C924BD54273920291743 /* LocalNotificationManager.m */,
 			);
-			path = notification;
+			path = LocalNotification;
 			sourceTree = "<group>";
 		};
 		17B5CDD2D5D1A9FC234004B4 /* TableView */ = {
@@ -361,7 +361,7 @@
 				17B5CEC465B373581A59F916 /* ReadOnly.m in Sources */,
 				17B5CC38331B61AB175B874B /* CompareTests.m in Sources */,
 				17B5C8460B43617BB2E216E7 /* MyTableViewController.m in Sources */,
-				17B5C39BC385413332D957CA /* LocalNotificationClass.m in Sources */,
+				17B5C39BC385413332D957CA /* LocalNotificationManager.m in Sources */,
 				17B5C8062E2DAD9FD1CB3DD4 /* LocalNotificationTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +376,7 @@
 				17B5C86205D5B398B879ECD5 /* ReadOnly.m in Sources */,
 				17B5C482B9985CFEE339C412 /* Property.m in Sources */,
 				17B5CBFFC6A40AC12157CFF9 /* MyTableViewController.m in Sources */,
-				17B5C18006DDD09BAD9B5BDB /* LocalNotificationClass.m in Sources */,
+				17B5C18006DDD09BAD9B5BDB /* LocalNotificationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
