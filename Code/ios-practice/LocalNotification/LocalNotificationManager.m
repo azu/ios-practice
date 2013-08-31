@@ -4,7 +4,7 @@
 
 + (void)setNotificationAtDate:(NSDate *) fireDate {
     // 通知時間 < 現在時 なら設定しない
-    if (([fireDate compare:[NSDate date]] == NSOrderedAscending)) {
+    if (fireDate == nil || [fireDate timeIntervalSinceNow] <= 0) {
         return;
     }
     // 設定する前に、設定済みの通知をキャンセルする
